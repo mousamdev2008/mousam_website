@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Fixing Using Cursor AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f4f7fb;
+            color: #172b4d;
+        }
+        h1 { color: #174ea6; }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+        pre {
+            background: #172033;
+            color: #e8f0ff;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        a { color: #174ea6; }
+    </style>
+</head>
+<body>
+    <h1>Bug Fixing Using Cursor AI</h1>
+    <p>This project demonstrates how an incorrect Python program can be debugged and improved using Cursor AI.</p>
+
+    <section>
+        <h2>Problem</h2>
+        <p>The program calculates the sum of numbers. The bug occurs when the total is replaced instead of accumulating each number.</p>
+    </section>
+
+    <section>
+        <h2>Incorrect Code</h2>
+        <pre>numbers = [10, 20, 30, 40, 50]
+total = 0
+
+for i in range(len(numbers)):
+    total = numbers[i]
+
+print("Sum of numbers:", total)</pre>
+    </section>
+
+    <section>
+        <h2>Corrected Code</h2>
+        <pre>numbers = [10, 20, 30, 40, 50]
+total = 0
+
+for i in range(len(numbers)):
+    total += numbers[i]
+
+print("Sum of numbers:", total)</pre>
+    </section>
+
+    <section>
+        <h2>Explanation</h2>
+        <p>The incorrect statement <code>total = numbers[i]</code> replaces the previous value in every iteration.</p>
+        <p>Using <code>total += numbers[i]</code> adds each number to the running total.</p>
+        <p><strong>Expected output:</strong> Sum of numbers: 150</p>
+    </section>
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
+</body>
+</html>

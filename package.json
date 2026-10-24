@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website developed to showcase my profile, education, technical skills, and programming projects as a B.Tech Computer Science and Engineering student.",
+  "main": "script.js",
+  "scripts": {
+  "build": "vite build",
+  "dev": "vite",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mousamdev2008/mousam_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mousamdev2008/mousam_portfolio/issues"
+  },
+  "homepage": "https://github.com/mousamdev2008/mousam_portfolio#readme",
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

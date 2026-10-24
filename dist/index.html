@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mousam Kumari — Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-BuuiQN8k.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-bar">
+        <a class="logo" href="#top">Mousam Kumari</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#chatbot">Chat</a>
+        </nav>
+        <button id="theme-toggle" type="button">Switch to Dark Mode</button>
+      </div>
+
+      <section class="hero" id="top">
+        <p class="eyebrow">Personal Profile</p>
+        <h1>Mousam Kumari</h1>
+        <p class="tagline">B.Tech CSE Student | Aspiring Software Developer</p>
+        <p class="hero-intro">
+          I am a B.Tech Computer Science and Engineering student
+          interested in programming and software development.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I am a B.Tech Computer Science and Engineering student
+          interested in programming and software development.
+        </p>
+        <p>
+          I am learning C++, Python, Data Structures and Algorithms,
+          and web development to improve my technical skills.
+        </p>
+      </section>
+
+      <section id="skills" class="card" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills-list">
+          <li>C++</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Data Structures and Algorithms</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="card" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <input
+          type="text"
+          id="project-search"
+          placeholder="Search projects by name or technology..."
+          aria-label="Search projects"
+        />
+
+        <ul class="projects-list">
+          <li>
+            <a href="python-programs/README.md">Python Programs Collection</a>
+            <p>
+              A collection of Python programs including factorial, Fibonacci,
+              and structure-to-dictionary conversion.
+            </p>
+          </li>
+          <li>
+            <a href="python-programs/messy-code-improvement/messy_code.py"
+              >Messy Python Code Improvement</a
+            >
+            <p>Improving messy Python code with the help of AI tools.</p>
+          </li>
+          <li>
+            <a href="bug-fixing-cursor-ai/buggy_program.py"
+              >Bug Fixing Using Cursor AI</a
+            >
+            <p>
+              Identifying and correcting errors in a program using Cursor AI.
+            </p>
+          </li>
+          <li>
+            <a
+              href="./quiz/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Interactive Quiz Application</a
+            >
+            <p>
+              An interactive quiz application created using concepts learned in
+              the lab.
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://reading-list-app-woad.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book Reading List Application</a
+            >
+            <p>
+              An application to maintain and manage a personal book reading
+              list.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="chatbot" class="card" aria-labelledby="chatbot-heading">
+        <h2 id="chatbot-heading">Portfolio assistant</h2>
+        <p>
+          Ask about Mousam Kumari's education, skills, projects, or contact
+          information.
+        </p>
+        <div
+          id="chat-messages"
+          class="chat-messages"
+          role="log"
+          aria-live="polite"
+        ></div>
+        <p id="chat-status" class="chat-status" hidden>Thinking...</p>
+        <form id="chat-form" class="chat-form">
+          <label class="visually-hidden" for="chat-input">Message</label>
+          <input
+            id="chat-input"
+            type="text"
+            maxlength="1000"
+            autocomplete="off"
+            placeholder="Ask a question about this portfolio..."
+          />
+          <button id="chat-send" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/mousamdev2008"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          mousamdev2008
+        </a>
+      </p>
+      <p>
+        Email:
+        <a href="mailto:mousamkumari@gmail.com">mousamkumari@gmail.com</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
